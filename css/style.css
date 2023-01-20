@@ -1,0 +1,205 @@
+/* outfit-300 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/outfit-v6-latin-300.woff2") format("woff2"), url("../fonts/outfit-v6-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-regular - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/outfit-v6-latin-regular.woff2") format("woff2"), url("../fonts/outfit-v6-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/outfit-v6-latin-600.woff2") format("woff2"), url("../fonts/outfit-v6-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #15263F;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 362px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main .hero .container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: #15263F;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  border-radius: 15px;
+}
+.main .hero .container .draiver {
+  width: 100%;
+  height: 1px;
+  background-color: #2E405A;
+  margin-bottom: 1.6rem;
+}
+.main .hero__img {
+  width: 100%;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+.main .hero__img:hover::after {
+  position: absolute;
+  content: url(/images/koz.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 43%;
+  left: 129px;
+}
+.main .hero__img:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #00FFF8;
+  opacity: 0.5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.main .hero__info h1 {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+.main .hero__info h1:hover {
+  color: #00FFF8;
+  cursor: pointer;
+}
+.main .hero__info p {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #8BACD9;
+  margin-bottom: 2.4rem;
+}
+.main .hero__eth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+.main .hero__eth .hero-eth {
+  display: flex;
+  align-items: center;
+}
+.main .hero__eth .hero-eth img {
+  margin-right: 6.5px;
+}
+.main .hero__eth .hero-eth h2 {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #00FFF8;
+}
+.main .hero__eth .hero-days {
+  display: flex;
+  align-items: center;
+}
+.main .hero__eth .hero-days img {
+  margin-right: 0.9rem;
+}
+.main .hero__eth .hero-days h2 {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: rgb(139, 172, 217);
+}
+.main .hero__jules {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+.main .hero__jules img {
+  margin-right: 1.6rem;
+}
+.main .hero__jules p {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: rgb(139, 172, 217);
+}
+.main .hero__jules p span {
+  margin-left: 5px;
+  color: #fff;
+}
+.main .hero__jules p span:hover {
+  color: #00FFF8;
+  cursor: pointer;
+}
+@media (max-width: 340px) {
+  .main .container {
+    margin: 0 auto;
+  }
+  .main .hero__img img {
+    width: 100%;
+  }
+}
+@media (max-width: 340px) and (max-width: 327px) {
+  .main .container {
+    margin: 0 auto;
+  }
+  .main .hero__img img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

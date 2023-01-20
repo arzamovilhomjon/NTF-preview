@@ -1,0 +1,290 @@
+/* outfit-300 - latin */
+@font-face {
+     font-family: 'Outfit';
+     font-style: normal;
+     font-weight: 300;
+     src: local(''),
+          url('../fonts/outfit-v6-latin-300.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/outfit-v6-latin-300.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* outfit-regular - latin */
+@font-face {
+     font-family: 'Outfit';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
+          url('../fonts/outfit-v6-latin-regular.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/outfit-v6-latin-regular.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* outfit-600 - latin */
+@font-face {
+     font-family: 'Outfit';
+     font-style: normal;
+     font-weight: 600;
+     src: local(''),
+          url('../fonts/outfit-v6-latin-600.woff2') format('woff2'),
+          /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../fonts/outfit-v6-latin-600.woff') format('woff');
+     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*,
+*::after,
+*::before {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+html {
+     height: 100%;
+     font-size: 62.5%;
+}
+
+body {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     background: #15263F;
+}
+
+ul,
+ol {
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+}
+
+img {
+     margin: 0;
+}
+
+
+.container {
+     width: 100%;
+     max-width: 362px;
+     padding-left: 30px;
+     padding-right: 30px;
+     margin-left: 0;
+     margin-right: 0;
+}
+
+//   main
+
+.main {
+     .hero {
+
+
+          .container {
+               display: flex;
+               flex-direction: column;
+               margin: 0 auto;
+               background: #15263F;
+               box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+               border-radius: 15px;
+
+               .draiver {
+                    width: 100%;
+                    height: 1px;
+                    background-color: #2E405A;
+                    margin-bottom: 1.6rem;
+               }
+
+
+          }
+
+          &__img {
+               // display: block;
+               width: 100%;
+               // width: 302px;
+               margin-top: 2.4rem;
+               margin-bottom: 2.4rem;
+               position: relative;
+               // opacity: 0.5px;
+
+          }
+
+          // .hero__over:hover{
+          //      position: absolute;
+
+          //      background: #00FFF8;
+
+          // }
+
+          // &__img:hover {
+          //      // position: absolute;
+          //      // background-color: #00FFF8;
+          //      opacity: 1px;
+          //      border-radius: 8px;
+          //      outline: none;
+          //      // z-index: 1;
+          //      opacity: 0.5;
+          //      // display: none;
+          // }
+
+          &__img:hover::after {
+               position: absolute;
+               content: url(/images/koz.svg);
+              
+
+               background-repeat: no-repeat;
+               // border: 1px solid;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               top: 43%;
+               left: 129px;
+               // opacity: 1;
+
+
+          }
+
+          &__img:hover::before{
+               position: absolute;
+               content: '';
+               width: 100%;
+               height: 100%;
+               background: #00FFF8;
+               opacity: 0.5;
+               border-radius: 8px;
+               cursor: pointer;
+               transition:  0.5s;
+          }
+
+          &__info {
+               h1 {
+                    font-family: 'Outfit', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 2.2rem;
+                    line-height: 2.8rem;
+                    color: #fff;
+                    margin-bottom: 1.6rem;
+               }
+
+               h1:hover {
+                    color: #00FFF8;
+                    cursor: pointer;
+               }
+
+               p {
+                    font-family: 'Outfit', sans-serif;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                    color: #8BACD9;
+                    margin-bottom: 2.4rem;
+               }
+          }
+
+          &__eth {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               margin-bottom: 2.4rem;
+
+               .hero-eth {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                         margin-right: 6.5px;
+                    }
+
+                    h2 {
+                         font-family: 'Outfit', sans-serif;
+                         font-style: normal;
+                         font-weight: 600;
+                         font-size: 1.6rem;
+                         line-height: 2rem;
+                         color: #00FFF8;
+                         ;
+                    }
+               }
+
+               .hero-days {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                         margin-right: 0.9rem;
+                    }
+
+
+                    h2 {
+                         font-family: 'Outfit', sans-serif;
+                         font-style: normal;
+                         font-weight: 400;
+                         font-size: 1.6rem;
+                         line-height: 2rem;
+                         color: rgba(139, 172, 217, 1);
+                    }
+               }
+          }
+
+          &__jules {
+               display: flex;
+               align-items: center;
+               margin-bottom: 3.2rem;
+
+               img {
+                    margin-right: 1.6rem;
+               }
+
+               p {
+                    font-family: 'Outfit', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                    color: rgba(139, 172, 217, 1);
+
+                    span {
+                         margin-left: 5px;
+                         color: #fff;
+                    }
+
+                    span:hover {
+                         color: #00FFF8;
+                         cursor:
+                              pointer;
+                    }
+               }
+          }
+
+
+     }
+
+     @media (max-width:340px) {
+          .container {
+               margin: 0 auto;
+          }
+
+          .hero__img {
+               img {
+                    width: 100%;
+               }
+          }
+
+          @media (max-width:327px) {
+               .container {
+                    margin: 0 auto;
+               }
+
+               .hero__img {
+                    img {
+                         width: 100%;
+                    }
+               }
+          }
+     }
+}
